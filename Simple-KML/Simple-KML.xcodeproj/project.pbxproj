@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCF960B41F905C5A004F57B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960B31F905C5A004F57B5 /* AppDelegate.m */; };
+		BCF960B71F905C5A004F57B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960B61F905C5A004F57B5 /* ViewController.m */; };
+		BCF960BA1F905C5A004F57B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF960B81F905C5A004F57B5 /* Main.storyboard */; };
+		BCF960BC1F905C5A004F57B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF960BB1F905C5A004F57B5 /* Assets.xcassets */; };
+		BCF960BF1F905C5A004F57B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF960BD1F905C5A004F57B5 /* LaunchScreen.storyboard */; };
+		BCF960C21F905C5A004F57B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960C11F905C5A004F57B5 /* main.m */; };
+		BCF960E81F905D21004F57B5 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960CB1F905D21004F57B5 /* CXMLDocument_CreationExtensions.m */; };
+		BCF960E91F905D21004F57B5 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960CD1F905D21004F57B5 /* CXMLNode_CreationExtensions.m */; };
+		BCF960EA1F905D21004F57B5 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960CF1F905D21004F57B5 /* CXHTMLDocument.m */; };
+		BCF960EB1F905D21004F57B5 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960D11F905D21004F57B5 /* CXMLDocument.m */; };
+		BCF960EC1F905D21004F57B5 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960D31F905D21004F57B5 /* CXMLDocument_PrivateExtensions.m */; };
+		BCF960ED1F905D21004F57B5 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960D51F905D21004F57B5 /* CXMLElement.m */; };
+		BCF960EE1F905D21004F57B5 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960D71F905D21004F57B5 /* CXMLElement_CreationExtensions.m */; };
+		BCF960EF1F905D21004F57B5 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960D91F905D21004F57B5 /* CXMLElement_ElementTreeExtensions.m */; };
+		BCF960F01F905D21004F57B5 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960DB1F905D21004F57B5 /* CXMLNamespaceNode.m */; };
+		BCF960F11F905D21004F57B5 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960DD1F905D21004F57B5 /* CXMLNode.m */; };
+		BCF960F21F905D21004F57B5 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960DF1F905D21004F57B5 /* CXMLNode_PrivateExtensions.m */; };
+		BCF960F31F905D21004F57B5 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960E11F905D21004F57B5 /* CXMLNode_XPathExtensions.m */; };
+		BCF960F41F905D21004F57B5 /* CXMLUnsupportedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960E31F905D21004F57B5 /* CXMLUnsupportedNode.m */; };
+		BCF960F51F905D21004F57B5 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960E61F905D21004F57B5 /* CTidy.m */; };
+		BCF960F81F905D88004F57B5 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF960F71F905D88004F57B5 /* libxml2.tbd */; };
+		BCF961341F9068B6004F57B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF961331F9068B6004F57B5 /* CoreLocation.framework */; };
+		BCF961381F906B46004F57B5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF961371F906B46004F57B5 /* libz.tbd */; };
+		BCF9613A1F906B7C004F57B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF961391F906B7C004F57B5 /* libc++.tbd */; };
+		BCF9613B1F90717D004F57B5 /* SimpleKML.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960FB1F90632D004F57B5 /* SimpleKML.m */; };
+		BCF9613C1F90717D004F57B5 /* SimpleKML_UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960FD1F90632D004F57B5 /* SimpleKML_UIImage.m */; };
+		BCF9613D1F90717D004F57B5 /* SimpleKMLBalloonStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF960FF1F90632D004F57B5 /* SimpleKMLBalloonStyle.m */; };
+		BCF9613E1F90717D004F57B5 /* SimpleKMLColorStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961011F90632D004F57B5 /* SimpleKMLColorStyle.m */; };
+		BCF9613F1F90717D004F57B5 /* SimpleKMLContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961031F90632D004F57B5 /* SimpleKMLContainer.m */; };
+		BCF961401F90717D004F57B5 /* SimpleKMLData.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961051F90632D004F57B5 /* SimpleKMLData.m */; };
+		BCF961411F90717D004F57B5 /* SimpleKMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961071F90632D004F57B5 /* SimpleKMLDocument.m */; };
+		BCF961421F90717D004F57B5 /* SimpleKMLExtendedData.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961091F90632D004F57B5 /* SimpleKMLExtendedData.m */; };
+		BCF961431F90717D004F57B5 /* SimpleKMLFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9610B1F90632D004F57B5 /* SimpleKMLFeature.m */; };
+		BCF961441F90717D004F57B5 /* SimpleKMLFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9610D1F90632D004F57B5 /* SimpleKMLFolder.m */; };
+		BCF961451F90717D004F57B5 /* SimpleKMLGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9610F1F90632D004F57B5 /* SimpleKMLGeometry.m */; };
+		BCF961461F90717D004F57B5 /* SimpleKMLGroundOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961111F90632D004F57B5 /* SimpleKMLGroundOverlay.m */; };
+		BCF961471F90717D004F57B5 /* SimpleKMLIconStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961131F90632D004F57B5 /* SimpleKMLIconStyle.m */; };
+		BCF961481F90717D004F57B5 /* SimpleKMLLinearRing.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961151F90632D004F57B5 /* SimpleKMLLinearRing.m */; };
+		BCF961491F90717D004F57B5 /* SimpleKMLLineString.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961171F90632D004F57B5 /* SimpleKMLLineString.m */; };
+		BCF9614A1F90717D004F57B5 /* SimpleKMLLineStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961191F90632D004F57B5 /* SimpleKMLLineStyle.m */; };
+		BCF9614B1F90717D004F57B5 /* SimpleKMLMultiGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9611B1F90632D004F57B5 /* SimpleKMLMultiGeometry.m */; };
+		BCF9614C1F90717D004F57B5 /* SimpleKMLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9611D1F90632D004F57B5 /* SimpleKMLObject.m */; };
+		BCF9614D1F90717D004F57B5 /* SimpleKMLOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9611F1F90632D004F57B5 /* SimpleKMLOverlay.m */; };
+		BCF9614E1F90717D004F57B5 /* SimpleKMLPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961211F90632D004F57B5 /* SimpleKMLPlacemark.m */; };
+		BCF9614F1F90717D004F57B5 /* SimpleKMLPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961231F90632D004F57B5 /* SimpleKMLPoint.m */; };
+		BCF961501F90717D004F57B5 /* SimpleKMLPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961251F90632D004F57B5 /* SimpleKMLPolygon.m */; };
+		BCF961511F90717D004F57B5 /* SimpleKMLPolyStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961271F90632D004F57B5 /* SimpleKMLPolyStyle.m */; };
+		BCF961521F90717D004F57B5 /* SimpleKMLSchemaData.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961291F90632D004F57B5 /* SimpleKMLSchemaData.m */; };
+		BCF961531F90717D004F57B5 /* SimpleKMLStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9612B1F90632D004F57B5 /* SimpleKMLStyle.m */; };
+		BCF961541F90717D004F57B5 /* SimpleKMLStyleSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9612D1F90632D004F57B5 /* SimpleKMLStyleSelector.m */; };
+		BCF961551F90717D004F57B5 /* SimpleKMLSubData.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9612F1F90632D004F57B5 /* SimpleKMLSubData.m */; };
+		BCF961561F90717D004F57B5 /* SimpleKMLSubStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF961311F90632D004F57B5 /* SimpleKMLSubStyle.m */; };
+		BCF961571F90740B004F57B5 /* bslinetest.kml in Resources */ = {isa = PBXBuildFile; fileRef = BCF961321F906358004F57B5 /* bslinetest.kml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCF960AF1F905C5A004F57B5 /* Simple-KML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-KML.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF960B21F905C5A004F57B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BCF960B31F905C5A004F57B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BCF960B51F905C5A004F57B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BCF960B61F905C5A004F57B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BCF960B91F905C5A004F57B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCF960BB1F905C5A004F57B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCF960BE1F905C5A004F57B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCF960C01F905C5A004F57B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF960C11F905C5A004F57B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BCF960CA1F905D21004F57B5 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		BCF960CB1F905D21004F57B5 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		BCF960CC1F905D21004F57B5 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		BCF960CD1F905D21004F57B5 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		BCF960CE1F905D21004F57B5 /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		BCF960CF1F905D21004F57B5 /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		BCF960D01F905D21004F57B5 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		BCF960D11F905D21004F57B5 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		BCF960D21F905D21004F57B5 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		BCF960D31F905D21004F57B5 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		BCF960D41F905D21004F57B5 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		BCF960D51F905D21004F57B5 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		BCF960D61F905D21004F57B5 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		BCF960D71F905D21004F57B5 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		BCF960D81F905D21004F57B5 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		BCF960D91F905D21004F57B5 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		BCF960DA1F905D21004F57B5 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		BCF960DB1F905D21004F57B5 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		BCF960DC1F905D21004F57B5 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		BCF960DD1F905D21004F57B5 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		BCF960DE1F905D21004F57B5 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		BCF960DF1F905D21004F57B5 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		BCF960E01F905D21004F57B5 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		BCF960E11F905D21004F57B5 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		BCF960E21F905D21004F57B5 /* CXMLUnsupportedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLUnsupportedNode.h; sourceTree = "<group>"; };
+		BCF960E31F905D21004F57B5 /* CXMLUnsupportedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLUnsupportedNode.m; sourceTree = "<group>"; };
+		BCF960E51F905D21004F57B5 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		BCF960E61F905D21004F57B5 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		BCF960E71F905D21004F57B5 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		BCF960F71F905D88004F57B5 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		BCF960FA1F90632D004F57B5 /* SimpleKML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKML.h; sourceTree = "<group>"; };
+		BCF960FB1F90632D004F57B5 /* SimpleKML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKML.m; sourceTree = "<group>"; };
+		BCF960FC1F90632D004F57B5 /* SimpleKML_UIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKML_UIImage.h; sourceTree = "<group>"; };
+		BCF960FD1F90632D004F57B5 /* SimpleKML_UIImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKML_UIImage.m; sourceTree = "<group>"; };
+		BCF960FE1F90632D004F57B5 /* SimpleKMLBalloonStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLBalloonStyle.h; sourceTree = "<group>"; };
+		BCF960FF1F90632D004F57B5 /* SimpleKMLBalloonStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLBalloonStyle.m; sourceTree = "<group>"; };
+		BCF961001F90632D004F57B5 /* SimpleKMLColorStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLColorStyle.h; sourceTree = "<group>"; };
+		BCF961011F90632D004F57B5 /* SimpleKMLColorStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLColorStyle.m; sourceTree = "<group>"; };
+		BCF961021F90632D004F57B5 /* SimpleKMLContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLContainer.h; sourceTree = "<group>"; };
+		BCF961031F90632D004F57B5 /* SimpleKMLContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLContainer.m; sourceTree = "<group>"; };
+		BCF961041F90632D004F57B5 /* SimpleKMLData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLData.h; sourceTree = "<group>"; };
+		BCF961051F90632D004F57B5 /* SimpleKMLData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLData.m; sourceTree = "<group>"; };
+		BCF961061F90632D004F57B5 /* SimpleKMLDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLDocument.h; sourceTree = "<group>"; };
+		BCF961071F90632D004F57B5 /* SimpleKMLDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLDocument.m; sourceTree = "<group>"; };
+		BCF961081F90632D004F57B5 /* SimpleKMLExtendedData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLExtendedData.h; sourceTree = "<group>"; };
+		BCF961091F90632D004F57B5 /* SimpleKMLExtendedData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLExtendedData.m; sourceTree = "<group>"; };
+		BCF9610A1F90632D004F57B5 /* SimpleKMLFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLFeature.h; sourceTree = "<group>"; };
+		BCF9610B1F90632D004F57B5 /* SimpleKMLFeature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLFeature.m; sourceTree = "<group>"; };
+		BCF9610C1F90632D004F57B5 /* SimpleKMLFolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLFolder.h; sourceTree = "<group>"; };
+		BCF9610D1F90632D004F57B5 /* SimpleKMLFolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLFolder.m; sourceTree = "<group>"; };
+		BCF9610E1F90632D004F57B5 /* SimpleKMLGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLGeometry.h; sourceTree = "<group>"; };
+		BCF9610F1F90632D004F57B5 /* SimpleKMLGeometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLGeometry.m; sourceTree = "<group>"; };
+		BCF961101F90632D004F57B5 /* SimpleKMLGroundOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLGroundOverlay.h; sourceTree = "<group>"; };
+		BCF961111F90632D004F57B5 /* SimpleKMLGroundOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLGroundOverlay.m; sourceTree = "<group>"; };
+		BCF961121F90632D004F57B5 /* SimpleKMLIconStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLIconStyle.h; sourceTree = "<group>"; };
+		BCF961131F90632D004F57B5 /* SimpleKMLIconStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLIconStyle.m; sourceTree = "<group>"; };
+		BCF961141F90632D004F57B5 /* SimpleKMLLinearRing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLLinearRing.h; sourceTree = "<group>"; };
+		BCF961151F90632D004F57B5 /* SimpleKMLLinearRing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLLinearRing.m; sourceTree = "<group>"; };
+		BCF961161F90632D004F57B5 /* SimpleKMLLineString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLLineString.h; sourceTree = "<group>"; };
+		BCF961171F90632D004F57B5 /* SimpleKMLLineString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLLineString.m; sourceTree = "<group>"; };
+		BCF961181F90632D004F57B5 /* SimpleKMLLineStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLLineStyle.h; sourceTree = "<group>"; };
+		BCF961191F90632D004F57B5 /* SimpleKMLLineStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLLineStyle.m; sourceTree = "<group>"; };
+		BCF9611A1F90632D004F57B5 /* SimpleKMLMultiGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLMultiGeometry.h; sourceTree = "<group>"; };
+		BCF9611B1F90632D004F57B5 /* SimpleKMLMultiGeometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLMultiGeometry.m; sourceTree = "<group>"; };
+		BCF9611C1F90632D004F57B5 /* SimpleKMLObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLObject.h; sourceTree = "<group>"; };
+		BCF9611D1F90632D004F57B5 /* SimpleKMLObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLObject.m; sourceTree = "<group>"; };
+		BCF9611E1F90632D004F57B5 /* SimpleKMLOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLOverlay.h; sourceTree = "<group>"; };
+		BCF9611F1F90632D004F57B5 /* SimpleKMLOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLOverlay.m; sourceTree = "<group>"; };
+		BCF961201F90632D004F57B5 /* SimpleKMLPlacemark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPlacemark.h; sourceTree = "<group>"; };
+		BCF961211F90632D004F57B5 /* SimpleKMLPlacemark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPlacemark.m; sourceTree = "<group>"; };
+		BCF961221F90632D004F57B5 /* SimpleKMLPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPoint.h; sourceTree = "<group>"; };
+		BCF961231F90632D004F57B5 /* SimpleKMLPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPoint.m; sourceTree = "<group>"; };
+		BCF961241F90632D004F57B5 /* SimpleKMLPolygon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPolygon.h; sourceTree = "<group>"; };
+		BCF961251F90632D004F57B5 /* SimpleKMLPolygon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPolygon.m; sourceTree = "<group>"; };
+		BCF961261F90632D004F57B5 /* SimpleKMLPolyStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLPolyStyle.h; sourceTree = "<group>"; };
+		BCF961271F90632D004F57B5 /* SimpleKMLPolyStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLPolyStyle.m; sourceTree = "<group>"; };
+		BCF961281F90632D004F57B5 /* SimpleKMLSchemaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLSchemaData.h; sourceTree = "<group>"; };
+		BCF961291F90632D004F57B5 /* SimpleKMLSchemaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLSchemaData.m; sourceTree = "<group>"; };
+		BCF9612A1F90632D004F57B5 /* SimpleKMLStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLStyle.h; sourceTree = "<group>"; };
+		BCF9612B1F90632D004F57B5 /* SimpleKMLStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLStyle.m; sourceTree = "<group>"; };
+		BCF9612C1F90632D004F57B5 /* SimpleKMLStyleSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLStyleSelector.h; sourceTree = "<group>"; };
+		BCF9612D1F90632D004F57B5 /* SimpleKMLStyleSelector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLStyleSelector.m; sourceTree = "<group>"; };
+		BCF9612E1F90632D004F57B5 /* SimpleKMLSubData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLSubData.h; sourceTree = "<group>"; };
+		BCF9612F1F90632D004F57B5 /* SimpleKMLSubData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLSubData.m; sourceTree = "<group>"; };
+		BCF961301F90632D004F57B5 /* SimpleKMLSubStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKMLSubStyle.h; sourceTree = "<group>"; };
+		BCF961311F90632D004F57B5 /* SimpleKMLSubStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKMLSubStyle.m; sourceTree = "<group>"; };
+		BCF961321F906358004F57B5 /* bslinetest.kml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = bslinetest.kml; sourceTree = "<group>"; };
+		BCF961331F9068B6004F57B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BCF961371F906B46004F57B5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BCF961391F906B7C004F57B5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCF960AC1F905C5A004F57B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF9613A1F906B7C004F57B5 /* libc++.tbd in Frameworks */,
+				BCF961381F906B46004F57B5 /* libz.tbd in Frameworks */,
+				BCF961341F9068B6004F57B5 /* CoreLocation.framework in Frameworks */,
+				BCF960F81F905D88004F57B5 /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCF960A61F905C5A004F57B5 = {
+			isa = PBXGroup;
+			children = (
+				BCF960B11F905C5A004F57B5 /* Simple-KML */,
+				BCF960B01F905C5A004F57B5 /* Products */,
+				BCF960F61F905D87004F57B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCF960B01F905C5A004F57B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCF960AF1F905C5A004F57B5 /* Simple-KML.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF960B11F905C5A004F57B5 /* Simple-KML */ = {
+			isa = PBXGroup;
+			children = (
+				BCF961321F906358004F57B5 /* bslinetest.kml */,
+				BCF960F91F90632D004F57B5 /* KMLParser */,
+				BCF960C81F905D21004F57B5 /* Source */,
+				BCF960B21F905C5A004F57B5 /* AppDelegate.h */,
+				BCF960B31F905C5A004F57B5 /* AppDelegate.m */,
+				BCF960B51F905C5A004F57B5 /* ViewController.h */,
+				BCF960B61F905C5A004F57B5 /* ViewController.m */,
+				BCF960B81F905C5A004F57B5 /* Main.storyboard */,
+				BCF960BB1F905C5A004F57B5 /* Assets.xcassets */,
+				BCF960BD1F905C5A004F57B5 /* LaunchScreen.storyboard */,
+				BCF960C01F905C5A004F57B5 /* Info.plist */,
+				BCF960C11F905C5A004F57B5 /* main.m */,
+			);
+			path = "Simple-KML";
+			sourceTree = "<group>";
+		};
+		BCF960C81F905D21004F57B5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BCF960C91F905D21004F57B5 /* Creation */,
+				BCF960CE1F905D21004F57B5 /* CXHTMLDocument.h */,
+				BCF960CF1F905D21004F57B5 /* CXHTMLDocument.m */,
+				BCF960D01F905D21004F57B5 /* CXMLDocument.h */,
+				BCF960D11F905D21004F57B5 /* CXMLDocument.m */,
+				BCF960D21F905D21004F57B5 /* CXMLDocument_PrivateExtensions.h */,
+				BCF960D31F905D21004F57B5 /* CXMLDocument_PrivateExtensions.m */,
+				BCF960D41F905D21004F57B5 /* CXMLElement.h */,
+				BCF960D51F905D21004F57B5 /* CXMLElement.m */,
+				BCF960D61F905D21004F57B5 /* CXMLElement_CreationExtensions.h */,
+				BCF960D71F905D21004F57B5 /* CXMLElement_CreationExtensions.m */,
+				BCF960D81F905D21004F57B5 /* CXMLElement_ElementTreeExtensions.h */,
+				BCF960D91F905D21004F57B5 /* CXMLElement_ElementTreeExtensions.m */,
+				BCF960DA1F905D21004F57B5 /* CXMLNamespaceNode.h */,
+				BCF960DB1F905D21004F57B5 /* CXMLNamespaceNode.m */,
+				BCF960DC1F905D21004F57B5 /* CXMLNode.h */,
+				BCF960DD1F905D21004F57B5 /* CXMLNode.m */,
+				BCF960DE1F905D21004F57B5 /* CXMLNode_PrivateExtensions.h */,
+				BCF960DF1F905D21004F57B5 /* CXMLNode_PrivateExtensions.m */,
+				BCF960E01F905D21004F57B5 /* CXMLNode_XPathExtensions.h */,
+				BCF960E11F905D21004F57B5 /* CXMLNode_XPathExtensions.m */,
+				BCF960E21F905D21004F57B5 /* CXMLUnsupportedNode.h */,
+				BCF960E31F905D21004F57B5 /* CXMLUnsupportedNode.m */,
+				BCF960E41F905D21004F57B5 /* Tidy */,
+				BCF960E71F905D21004F57B5 /* TouchXML.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BCF960C91F905D21004F57B5 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				BCF960CA1F905D21004F57B5 /* CXMLDocument_CreationExtensions.h */,
+				BCF960CB1F905D21004F57B5 /* CXMLDocument_CreationExtensions.m */,
+				BCF960CC1F905D21004F57B5 /* CXMLNode_CreationExtensions.h */,
+				BCF960CD1F905D21004F57B5 /* CXMLNode_CreationExtensions.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		BCF960E41F905D21004F57B5 /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				BCF960E51F905D21004F57B5 /* CTidy.h */,
+				BCF960E61F905D21004F57B5 /* CTidy.m */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
+		BCF960F61F905D87004F57B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCF961391F906B7C004F57B5 /* libc++.tbd */,
+				BCF961371F906B46004F57B5 /* libz.tbd */,
+				BCF961331F9068B6004F57B5 /* CoreLocation.framework */,
+				BCF960F71F905D88004F57B5 /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCF960F91F90632D004F57B5 /* KMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				BCF960FA1F90632D004F57B5 /* SimpleKML.h */,
+				BCF960FB1F90632D004F57B5 /* SimpleKML.m */,
+				BCF960FC1F90632D004F57B5 /* SimpleKML_UIImage.h */,
+				BCF960FD1F90632D004F57B5 /* SimpleKML_UIImage.m */,
+				BCF960FE1F90632D004F57B5 /* SimpleKMLBalloonStyle.h */,
+				BCF960FF1F90632D004F57B5 /* SimpleKMLBalloonStyle.m */,
+				BCF961001F90632D004F57B5 /* SimpleKMLColorStyle.h */,
+				BCF961011F90632D004F57B5 /* SimpleKMLColorStyle.m */,
+				BCF961021F90632D004F57B5 /* SimpleKMLContainer.h */,
+				BCF961031F90632D004F57B5 /* SimpleKMLContainer.m */,
+				BCF961041F90632D004F57B5 /* SimpleKMLData.h */,
+				BCF961051F90632D004F57B5 /* SimpleKMLData.m */,
+				BCF961061F90632D004F57B5 /* SimpleKMLDocument.h */,
+				BCF961071F90632D004F57B5 /* SimpleKMLDocument.m */,
+				BCF961081F90632D004F57B5 /* SimpleKMLExtendedData.h */,
+				BCF961091F90632D004F57B5 /* SimpleKMLExtendedData.m */,
+				BCF9610A1F90632D004F57B5 /* SimpleKMLFeature.h */,
+				BCF9610B1F90632D004F57B5 /* SimpleKMLFeature.m */,
+				BCF9610C1F90632D004F57B5 /* SimpleKMLFolder.h */,
+				BCF9610D1F90632D004F57B5 /* SimpleKMLFolder.m */,
+				BCF9610E1F90632D004F57B5 /* SimpleKMLGeometry.h */,
+				BCF9610F1F90632D004F57B5 /* SimpleKMLGeometry.m */,
+				BCF961101F90632D004F57B5 /* SimpleKMLGroundOverlay.h */,
+				BCF961111F90632D004F57B5 /* SimpleKMLGroundOverlay.m */,
+				BCF961121F90632D004F57B5 /* SimpleKMLIconStyle.h */,
+				BCF961131F90632D004F57B5 /* SimpleKMLIconStyle.m */,
+				BCF961141F90632D004F57B5 /* SimpleKMLLinearRing.h */,
+				BCF961151F90632D004F57B5 /* SimpleKMLLinearRing.m */,
+				BCF961161F90632D004F57B5 /* SimpleKMLLineString.h */,
+				BCF961171F90632D004F57B5 /* SimpleKMLLineString.m */,
+				BCF961181F90632D004F57B5 /* SimpleKMLLineStyle.h */,
+				BCF961191F90632D004F57B5 /* SimpleKMLLineStyle.m */,
+				BCF9611A1F90632D004F57B5 /* SimpleKMLMultiGeometry.h */,
+				BCF9611B1F90632D004F57B5 /* SimpleKMLMultiGeometry.m */,
+				BCF9611C1F90632D004F57B5 /* SimpleKMLObject.h */,
+				BCF9611D1F90632D004F57B5 /* SimpleKMLObject.m */,
+				BCF9611E1F90632D004F57B5 /* SimpleKMLOverlay.h */,
+				BCF9611F1F90632D004F57B5 /* SimpleKMLOverlay.m */,
+				BCF961201F90632D004F57B5 /* SimpleKMLPlacemark.h */,
+				BCF961211F90632D004F57B5 /* SimpleKMLPlacemark.m */,
+				BCF961221F90632D004F57B5 /* SimpleKMLPoint.h */,
+				BCF961231F90632D004F57B5 /* SimpleKMLPoint.m */,
+				BCF961241F90632D004F57B5 /* SimpleKMLPolygon.h */,
+				BCF961251F90632D004F57B5 /* SimpleKMLPolygon.m */,
+				BCF961261F90632D004F57B5 /* SimpleKMLPolyStyle.h */,
+				BCF961271F90632D004F57B5 /* SimpleKMLPolyStyle.m */,
+				BCF961281F90632D004F57B5 /* SimpleKMLSchemaData.h */,
+				BCF961291F90632D004F57B5 /* SimpleKMLSchemaData.m */,
+				BCF9612A1F90632D004F57B5 /* SimpleKMLStyle.h */,
+				BCF9612B1F90632D004F57B5 /* SimpleKMLStyle.m */,
+				BCF9612C1F90632D004F57B5 /* SimpleKMLStyleSelector.h */,
+				BCF9612D1F90632D004F57B5 /* SimpleKMLStyleSelector.m */,
+				BCF9612E1F90632D004F57B5 /* SimpleKMLSubData.h */,
+				BCF9612F1F90632D004F57B5 /* SimpleKMLSubData.m */,
+				BCF961301F90632D004F57B5 /* SimpleKMLSubStyle.h */,
+				BCF961311F90632D004F57B5 /* SimpleKMLSubStyle.m */,
+			);
+			path = KMLParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCF960AE1F905C5A004F57B5 /* Simple-KML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF960C51F905C5A004F57B5 /* Build configuration list for PBXNativeTarget "Simple-KML" */;
+			buildPhases = (
+				DC0272342774946D025EE768 /* [CP] Check Pods Manifest.lock */,
+				BCF960AB1F905C5A004F57B5 /* Sources */,
+				BCF960AC1F905C5A004F57B5 /* Frameworks */,
+				BCF960AD1F905C5A004F57B5 /* Resources */,
+				928519984CBEB5056DFC90D6 /* [CP] Embed Pods Frameworks */,
+				ED17B8CBD568ABA4B5653E0D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple-KML";
+			productName = "Simple-KML";
+			productReference = BCF960AF1F905C5A004F57B5 /* Simple-KML.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCF960A71F905C5A004F57B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = summerxx.com;
+				TargetAttributes = {
+					BCF960AE1F905C5A004F57B5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCF960AA1F905C5A004F57B5 /* Build configuration list for PBXProject "Simple-KML" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCF960A61F905C5A004F57B5;
+			productRefGroup = BCF960B01F905C5A004F57B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCF960AE1F905C5A004F57B5 /* Simple-KML */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCF960AD1F905C5A004F57B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF961571F90740B004F57B5 /* bslinetest.kml in Resources */,
+				BCF960BF1F905C5A004F57B5 /* LaunchScreen.storyboard in Resources */,
+				BCF960BC1F905C5A004F57B5 /* Assets.xcassets in Resources */,
+				BCF960BA1F905C5A004F57B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		928519984CBEB5056DFC90D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		DC0272342774946D025EE768 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		ED17B8CBD568ABA4B5653E0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCF960AB1F905C5A004F57B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCF9613B1F90717D004F57B5 /* SimpleKML.m in Sources */,
+				BCF9613C1F90717D004F57B5 /* SimpleKML_UIImage.m in Sources */,
+				BCF9613D1F90717D004F57B5 /* SimpleKMLBalloonStyle.m in Sources */,
+				BCF9613E1F90717D004F57B5 /* SimpleKMLColorStyle.m in Sources */,
+				BCF9613F1F90717D004F57B5 /* SimpleKMLContainer.m in Sources */,
+				BCF961401F90717D004F57B5 /* SimpleKMLData.m in Sources */,
+				BCF961411F90717D004F57B5 /* SimpleKMLDocument.m in Sources */,
+				BCF961421F90717D004F57B5 /* SimpleKMLExtendedData.m in Sources */,
+				BCF961431F90717D004F57B5 /* SimpleKMLFeature.m in Sources */,
+				BCF961441F90717D004F57B5 /* SimpleKMLFolder.m in Sources */,
+				BCF961451F90717D004F57B5 /* SimpleKMLGeometry.m in Sources */,
+				BCF961461F90717D004F57B5 /* SimpleKMLGroundOverlay.m in Sources */,
+				BCF961471F90717D004F57B5 /* SimpleKMLIconStyle.m in Sources */,
+				BCF961481F90717D004F57B5 /* SimpleKMLLinearRing.m in Sources */,
+				BCF961491F90717D004F57B5 /* SimpleKMLLineString.m in Sources */,
+				BCF9614A1F90717D004F57B5 /* SimpleKMLLineStyle.m in Sources */,
+				BCF9614B1F90717D004F57B5 /* SimpleKMLMultiGeometry.m in Sources */,
+				BCF9614C1F90717D004F57B5 /* SimpleKMLObject.m in Sources */,
+				BCF9614D1F90717D004F57B5 /* SimpleKMLOverlay.m in Sources */,
+				BCF9614E1F90717D004F57B5 /* SimpleKMLPlacemark.m in Sources */,
+				BCF9614F1F90717D004F57B5 /* SimpleKMLPoint.m in Sources */,
+				BCF961501F90717D004F57B5 /* SimpleKMLPolygon.m in Sources */,
+				BCF961511F90717D004F57B5 /* SimpleKMLPolyStyle.m in Sources */,
+				BCF961521F90717D004F57B5 /* SimpleKMLSchemaData.m in Sources */,
+				BCF961531F90717D004F57B5 /* SimpleKMLStyle.m in Sources */,
+				BCF961541F90717D004F57B5 /* SimpleKMLStyleSelector.m in Sources */,
+				BCF961551F90717D004F57B5 /* SimpleKMLSubData.m in Sources */,
+				BCF961561F90717D004F57B5 /* SimpleKMLSubStyle.m in Sources */,
+				BCF960EC1F905D21004F57B5 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				BCF960B71F905C5A004F57B5 /* ViewController.m in Sources */,
+				BCF960EF1F905D21004F57B5 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				BCF960F41F905D21004F57B5 /* CXMLUnsupportedNode.m in Sources */,
+				BCF960E81F905D21004F57B5 /* CXMLDocument_CreationExtensions.m in Sources */,
+				BCF960ED1F905D21004F57B5 /* CXMLElement.m in Sources */,
+				BCF960F01F905D21004F57B5 /* CXMLNamespaceNode.m in Sources */,
+				BCF960F51F905D21004F57B5 /* CTidy.m in Sources */,
+				BCF960C21F905C5A004F57B5 /* main.m in Sources */,
+				BCF960F11F905D21004F57B5 /* CXMLNode.m in Sources */,
+				BCF960F31F905D21004F57B5 /* CXMLNode_XPathExtensions.m in Sources */,
+				BCF960B41F905C5A004F57B5 /* AppDelegate.m in Sources */,
+				BCF960F21F905D21004F57B5 /* CXMLNode_PrivateExtensions.m in Sources */,
+				BCF960EA1F905D21004F57B5 /* CXHTMLDocument.m in Sources */,
+				BCF960E91F905D21004F57B5 /* CXMLNode_CreationExtensions.m in Sources */,
+				BCF960EE1F905D21004F57B5 /* CXMLElement_CreationExtensions.m in Sources */,
+				BCF960EB1F905D21004F57B5 /* CXMLDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BCF960B81F905C5A004F57B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF960B91F905C5A004F57B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCF960BD1F905C5A004F57B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCF960BE1F905C5A004F57B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCF960C31F905C5A004F57B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BCF960C41F905C5A004F57B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCF960C61F905C5A004F57B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922ZGR4HL4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Simple-KML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.Simple-KML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		BCF960C71F905C5A004F57B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 922ZGR4HL4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "Simple-KML/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "-MyCompanyName-.Simple-KML";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCF960AA1F905C5A004F57B5 /* Build configuration list for PBXProject "Simple-KML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF960C31F905C5A004F57B5 /* Debug */,
+				BCF960C41F905C5A004F57B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF960C51F905C5A004F57B5 /* Build configuration list for PBXNativeTarget "Simple-KML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF960C61F905C5A004F57B5 /* Debug */,
+				BCF960C71F905C5A004F57B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCF960A71F905C5A004F57B5 /* Project object */;
+}
